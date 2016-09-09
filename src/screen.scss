@@ -18,14 +18,14 @@ html {
 }
 
 body {
-  background-color: $black;
+  background-color: $white;
   margin: 0;
   padding-top: 6px;
 
   overflow-x: hidden;
 }
 
-body > footer {
+footer {
   font: 0.7em $alt-font-family;
   padding: 2em 0 1.6em;
   text-align: center;
@@ -91,9 +91,12 @@ ol, ul {
 
     margin-bottom: 0.4em;
 
+    ol, ul {
+      margin: 0.5em 1em 0.8em;
+    }
+
     ul {
       list-style: circle;
-      margin: 0.5em 1em;
     }
 
     ol {
@@ -140,11 +143,8 @@ hr {
   margin: 2em auto;
   max-width: 20%;
 
-  &.superheavy {
-    border: 0;
-    height:16px;
-    background: inline-image('bg.png') repeat-x;
-    max-width: 100%;
+  .dark & {
+    border-color: $white;
   }
 }
 
@@ -177,17 +177,6 @@ h1 {
   @media screen and (max-width: 480px) {
     margin: 0.5em 0 0.5em;
   }
-}
-
-h2 {
-  font-size: 1.2em;
-}
-
-h3 {
-  font-size: 0.9em;
-  margin: 2em 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 pre {
@@ -236,33 +225,9 @@ table {
   }
 }
 
-.content {
-  background-color: #fff;
-  min-height: 80vh;
-  padding: 10px 10px 3em;
-}
-
-.container {
-  margin:auto;
-  max-width: 940px;
-  width: 100%;
-
-  @media screen and (max-width: 1024px) {
-    margin: 0 auto;
-    max-width: 90%;
-
-    &.no-margin {
-      margin: 0;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    max-width: 95%;
-  }
-}
-
 .dark {
-  color: #fff;
+  background-color: $black;
+  color: $white;
 
   a {
     &:link, &:visited, &:hover, &:focus, &:active {

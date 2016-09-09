@@ -4,7 +4,9 @@ $container-width: 1200px;
 $gutter: 90px;
 
 article {
-  margin-top: calc(100vh);
+  margin: calc(100vh) auto 0;
+  max-width: 940px;
+  width: 100%;
 
   h1,h2,h3,h4,h5,h6 {
     clear: both;
@@ -12,6 +14,15 @@ article {
 
   @media screen and (min-width: 768px) {
     padding-top: 1px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 95%;
   }
 }
 
@@ -114,7 +125,7 @@ article {
 
 .article-header__summary {
   max-width: 768px;
-  margin: 0 auto;
+  margin: 0 auto 3em;
   width: 100%;
   z-index: 1;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
@@ -132,6 +143,6 @@ article {
   p {
     font-style:italic;
     font-size: 1.6em;
-    margin: 0 0 3em;
+    margin: 0;
   }
 }
