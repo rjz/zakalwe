@@ -1,0 +1,11 @@
+{
+  "name": "zakalwe",
+  "version": "1.0.0",
+  "description": "High-contrast stylesheet for blogs",
+  "author": "RJ Zaworski <rj@rjzaworski.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.9.3",
+    "normalize.css": "^4.2.0"
+  }
+}
