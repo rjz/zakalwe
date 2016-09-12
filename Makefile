@@ -2,7 +2,10 @@ SASSBIN=./node_modules/.bin/node-sass
 SASSFLAGS=--include-path='./node_modules/normalize.css/'
 SRC=src/zakalwe.scss
 
-all: clean zakalwe.css zakalwe.min.css
+all: $(SASSBIN) clean zakalwe.css zakalwe.min.css
+
+$(SASSBIN):
+	npm install
 
 zakalwe.css: $(SRC)
 	$(SASSBIN) $(SASSFLAGS) $(SRC) > $@
