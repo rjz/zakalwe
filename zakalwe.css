@@ -389,12 +389,12 @@ html {
       line-height: 1.5; } }
 
 body {
-  background-color: #231f20;
+  background-color: #fff;
   margin: 0;
   padding-top: 6px;
   overflow-x: hidden; }
 
-body > footer {
+footer {
   font: 0.7em Arial, sans-serif;
   padding: 2em 0 1.6em;
   text-align: center; }
@@ -440,9 +440,10 @@ ol, ul {
   margin: 1.5em 1em; }
   ol li, ul li {
     margin-bottom: 0.4em; }
+    ol li ol, ol li ul, ul li ol, ul li ul {
+      margin: 0.5em 1em 0.8em; }
     ol li ul, ul li ul {
-      list-style: circle;
-      margin: 0.5em 1em; }
+      list-style: circle; }
     ol li ol, ul li ol {
       list-style: lower-alpha; }
 
@@ -475,11 +476,8 @@ hr {
   border-bottom: 1px dotted #231f20;
   margin: 2em auto;
   max-width: 20%; }
-  hr.superheavy {
-    border: 0;
-    height: 16px;
-    background: inline-image("bg.png") repeat-x;
-    max-width: 100%; }
+  .dark hr {
+    border-color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, sans-serif;
@@ -502,15 +500,6 @@ h1 {
   @media screen and (max-width: 480px) {
     h1 {
       margin: 0.5em 0 0.5em; } }
-
-h2 {
-  font-size: 1.2em; }
-
-h3 {
-  font-size: 0.9em;
-  margin: 2em 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; }
 
 pre {
   padding: 1em 1em 1em 2em; }
@@ -546,26 +535,8 @@ table {
       margin: 0;
       width: 100%; } }
 
-.content {
-  background-color: #fff;
-  min-height: 80vh;
-  padding: 10px 10px 3em; }
-
-.container {
-  margin: auto;
-  max-width: 940px;
-  width: 100%; }
-  @media screen and (max-width: 1024px) {
-    .container {
-      margin: 0 auto;
-      max-width: 90%; }
-      .container.no-margin {
-        margin: 0; } }
-  @media screen and (max-width: 768px) {
-    .container {
-      max-width: 95%; } }
-
 .dark {
+  background-color: #231f20;
   color: #fff; }
   .dark a:link, .dark a:visited, .dark a:hover, .dark a:focus, .dark a:active {
     color: #fff;
@@ -575,12 +546,21 @@ table {
     border-bottom: 1px solid #fff; }
 
 article {
-  margin-top: calc(100vh); }
+  margin: calc(100vh) auto 0;
+  max-width: 940px;
+  width: 100%; }
   article h1, article h2, article h3, article h4, article h5, article h6 {
     clear: both; }
   @media screen and (min-width: 768px) {
     article {
       padding-top: 1px; } }
+  @media screen and (max-width: 1024px) {
+    article {
+      margin: 0 auto;
+      max-width: 90%; } }
+  @media screen and (max-width: 768px) {
+    article {
+      max-width: 95%; } }
 
 .article__sharing li {
   display: inline;
@@ -660,7 +640,7 @@ article {
 
 .article-header__summary {
   max-width: 768px;
-  margin: 0 auto;
+  margin: 0 auto 3em;
   width: 100%;
   z-index: 1;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
@@ -673,5 +653,5 @@ article {
   .article-header__summary p {
     font-style: italic;
     font-size: 1.6em;
-    margin: 0 0 3em; }
+    margin: 0; }
 
