@@ -6,18 +6,15 @@ $gutter: 90px;
 article {
   margin: calc(100vh) auto 0;
   max-width: 940px;
+
+  padding-top: 1px; /* force padding */
   width: 100%;
 
   h1,h2,h3,h4,h5,h6 {
     clear: both;
   }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 1px;
-  }
-
   @media screen and (max-width: 1024px) {
-    margin: 0 auto;
     max-width: 90%;
   }
 
