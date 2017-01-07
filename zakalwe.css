@@ -391,7 +391,7 @@ html {
 body {
   background-color: #fff;
   margin: 0;
-  padding-top: 6px;
+  padding-top: 0;
   overflow-x: hidden; }
 
 footer {
@@ -501,20 +501,22 @@ h1 {
     h1 {
       margin: 0.5em 0 0.5em; } }
 
+code, pre {
+  color: #048b51;
+  font: normal 0.9em/1.3em monospace; }
+  a > code, a > pre {
+    color: #1982d1; }
+
 pre {
-  padding: 1em 1em 1em 2em; }
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding: 0.5em 1em 0.5em 2em; }
   @media screen and (max-width: 480px) {
     pre {
       border: none;
       padding: 1em 0;
       overflow-wrap: break-word;
       overflow: hidden; } }
-
-code, pre {
-  color: #048b51;
-  font: normal 0.9em/1.3em monospace; }
-  a > code, a > pre {
-    color: #1982d1; }
 
 table {
   font-size: 0.9em;
@@ -546,10 +548,9 @@ table {
     border-bottom: 1px solid #fff; }
 
 article {
-  margin: calc(100vh) auto 0;
+  margin: 0 auto;
   max-width: 940px;
-  padding-top: 1px;
-  /* force padding */
+  padding-top: 0;
   width: 100%; }
   article h1, article h2, article h3, article h4, article h5, article h6 {
     clear: both; }
@@ -610,15 +611,18 @@ article {
 .article-header {
   background-color: #231f20;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-left: calc(-50vw + 470px);
+  position: relative;
+  overflow: hidden;
   color: #fff;
   text-align: center; }
+
+.article-header--mini {
+  height: 300px; }
 
 .article-header__image {
   background: #231f20 center center no-repeat;
