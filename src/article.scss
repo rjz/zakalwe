@@ -1,13 +1,14 @@
 @import 'variables.scss';
 
 $container-width: 1200px;
+$article-width: 940px;
 $gutter: 90px;
 
 article {
-  margin: calc(100vh) auto 0;
-  max-width: 940px;
+  margin: 0 auto;
+  max-width: $article-width;
 
-  padding-top: 1px; /* force padding */
+  padding-top: 0;
   width: 100%;
 
   h1,h2,h3,h4,h5,h6 {
@@ -88,17 +89,21 @@ article {
 .article-header {
   background-color: $black;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-left: calc(-50vw + #{$article-width / 2});
+  position:relative;
+  overflow:hidden;
 
   color: $white;
   text-align: center;
+}
+
+.article-header--mini {
+  height: 300px;
 }
 
 .article-header__image {
