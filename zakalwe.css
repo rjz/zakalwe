@@ -612,6 +612,7 @@ article {
   background-color: #231f20;
   height: 100vh;
   width: 100vw;
+  max-height: 800px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
