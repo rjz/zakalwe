@@ -441,7 +441,7 @@ ol, ul {
   ol li, ul li {
     margin-bottom: 0.4em; }
     ol li ol, ol li ul, ul li ol, ul li ul {
-      margin: 0.5em 1em 0.8em; }
+      margin: 0.5em 1em 0.8em 0; }
     ol li ul, ul li ul {
       list-style: circle; }
     ol li ol, ul li ol {
@@ -466,7 +466,7 @@ ul {
 blockquote, pre {
   border-left: 1px dotted #231f20;
   font-size: 0.9em;
-  padding-left: 1em; }
+  padding: 0.5em 0 0.5em 1.5em; }
 
 blockquote cite {
   margin-left: 3em; }
