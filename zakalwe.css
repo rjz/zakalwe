@@ -523,13 +523,17 @@ table {
   margin: 1em 0 2em;
   width: 100%; }
   table td, table th {
-    padding: 0.3em;
+    padding: 0.3em 1em;
     vertical-align: top; }
+  table td {
+    border-bottom: 1px dotted #231f20; }
+  table tr:last-child td {
+    border-bottom: 0; }
   table th {
-    border-top: 2px solid #231f20;
     border-bottom: 1px dotted #231f20;
-    font: normal 0.7em Arial, sans-serif;
-    padding: 1em 0.5em 0.75em;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    padding-top: 1em;
     text-align: left;
     text-transform: uppercase; }
   @media screen and (max-width: 480px) {
@@ -612,6 +616,7 @@ article {
   background-color: #231f20;
   height: 100vh;
   width: 100vw;
+  max-height: 800px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
