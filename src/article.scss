@@ -44,6 +44,10 @@ article {
     height: 1em;
     text-align: center;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .article__leader {
@@ -101,6 +105,15 @@ article {
 
   color: $white;
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    max-height: 50vh;
+    margin-left: -5.5%;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: -2.6%;
+  }
 }
 
 .article-header--mini {
@@ -147,5 +160,10 @@ article {
     font-style:italic;
     font-size: 1.6em;
     margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+    max-width: 600px;
   }
 }
