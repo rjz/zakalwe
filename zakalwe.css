@@ -409,6 +409,9 @@ a:hover, a:focus, a:active {
 
 p, ol, ul, dl, blockquote {
   margin: 1.2em 0 1.6em; }
+  @media screen and (max-width: 768px) {
+    p, ol, ul, dl, blockquote {
+      margin: 1em 0; } }
 
 figure {
   display: block;
@@ -429,12 +432,12 @@ figure {
     display: block;
     font-size: 0.8em;
     font-style: normal; }
+  @media screen and (max-width: 768px) {
+    figure {
+      max-width: 90%; } }
 
 ol, ul, blockquote, pre {
   margin: 1.5em 2em; }
-  @media screen and (max-width: 480px) {
-    ol, ul, blockquote, pre {
-      margin: 1em 0; } }
 
 ol, ul {
   margin: 1.5em 1em; }
@@ -582,6 +585,10 @@ article {
   height: 1em;
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .article__sharing {
+    display: none; } }
+
 .article__leader {
   font-size: 1.4em; }
 
@@ -625,6 +632,13 @@ article {
   overflow: hidden;
   color: #fff;
   text-align: center; }
+  @media screen and (max-width: 1024px) {
+    .article-header {
+      max-height: 50vh;
+      margin-left: -5.5%; } }
+  @media screen and (max-width: 768px) {
+    .article-header {
+      margin-left: -2.6%; } }
 
 .article-header--mini {
   height: 300px; }
@@ -661,4 +675,8 @@ article {
     font-style: italic;
     font-size: 1.6em;
     margin: 0; }
+  @media screen and (max-width: 768px) {
+    .article-header__summary {
+      padding: 0 20px;
+      max-width: 600px; } }
 
