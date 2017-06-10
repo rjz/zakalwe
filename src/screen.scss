@@ -69,14 +69,18 @@ figure {
     text-align: center;
     font-style:italic;
     font-size: 0.9em;
-    margin-top:0.6em;
+    padding-top:0.6em;
+    position: relative;
   }
 
   cite {
     color: #777;
-    display: block;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-style: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   @media screen and (max-width: 768px) {

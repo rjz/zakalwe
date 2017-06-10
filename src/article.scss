@@ -69,6 +69,10 @@ article {
   }
 }
 
+.article__figure--inline cite {
+  position: static;
+}
+
 .article__figure--inline-right {
   float: right;
   margin: 0 0 2em 1em;
