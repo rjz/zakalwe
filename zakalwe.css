@@ -426,12 +426,16 @@ figure {
     text-align: center;
     font-style: italic;
     font-size: 0.9em;
-    margin-top: 0.6em; }
+    padding-top: 0.6em;
+    position: relative; }
   figure cite {
     color: #777;
-    display: block;
-    font-size: 0.8em;
-    font-style: normal; }
+    font-size: 0.6em;
+    font-style: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0; }
   @media screen and (max-width: 768px) {
     figure {
       max-width: 90%; } }
@@ -601,6 +605,9 @@ article {
   @media screen and (max-width: 767px) {
     .article__figure--inline {
       width: 100%; } }
+
+.article__figure--inline cite {
+  position: static; }
 
 .article__figure--inline-right {
   float: right;
