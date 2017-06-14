@@ -52,6 +52,16 @@ article {
 
 .article__leader {
   font-size: 1.4em;
+
+  width: 100vw;
+  position:relative;
+  margin-left: -1 * $gutter;
+  max-width: $container-width;
+
+  @media screen and (max-width: $container-width) {
+    margin-left: 0;
+    max-width: 95%;
+  }
 }
 
 .article__figure {
