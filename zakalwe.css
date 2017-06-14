@@ -594,7 +594,15 @@ article {
     display: none; } }
 
 .article__leader {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  width: 100vw;
+  position: relative;
+  margin-left: -90px;
+  max-width: 1200px; }
+  @media screen and (max-width: 1200px) {
+    .article__leader {
+      margin-left: 0;
+      max-width: 95%; } }
 
 .article__figure figcaption {
   font-size: 0.7em; }
