@@ -517,8 +517,9 @@ code, pre {
 pre {
   font-size: 0.9em;
   line-height: 1.3em;
-  padding: 0.5em 1em 0.5em 2em; }
-  @media screen and (max-width: 480px) {
+  padding: 0.5em 1em 0.5em 2em;
+  white-space: pre-wrap; }
+  @media screen and (max-width: 1025px) {
     pre {
       border: none;
       padding: 1em 0;
