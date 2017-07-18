@@ -1,5 +1,3 @@
 @import 'normalize';
-@import 'ie';
-@import 'print';
-@import 'screen';
-@import 'article';
+@import './screen.scss';
+@import './article.scss';

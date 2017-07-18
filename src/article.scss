@@ -7,11 +7,15 @@ $gutter: 90px;
 article {
   margin: 0 auto;
   max-width: $article-width;
-
   padding-top: 0;
   width: 100%;
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     clear: both;
   }
 
@@ -30,7 +34,9 @@ article {
     list-style: none;
   }
 
-  i, a:link, a:visited {
+  i,
+  a:link,
+  a:visited {
     cursor: pointer;
     color: $white;
   }
@@ -52,9 +58,8 @@ article {
 
 .article__leader {
   font-size: 1.4em;
-
   width: 100vw;
-  position:relative;
+  position: relative;
   margin-left: -1 * $gutter;
   max-width: $container-width;
 
@@ -95,7 +100,7 @@ article {
 
 .article__figure--jumbo {
   width: 100vw;
-  position:relative;
+  position: relative;
   margin-left: -1 * $gutter;
   max-width: $container-width;
 
@@ -109,14 +114,12 @@ article {
   height: 100vh;
   width: 100vw;
   max-height: 800px;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-left: calc(-50vw + #{$article-width / 2});
-  position:relative;
-  overflow:hidden;
-
+  margin-left: calc(-50vw + 470px);
+  position: relative;
+  overflow: hidden;
   color: $white;
   text-align: center;
 
@@ -137,11 +140,11 @@ article {
 .article-header__image {
   background: $black center center no-repeat;
   background-size: cover;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom:0;
+  bottom: 0;
   z-index: 0;
 
   a {
@@ -158,20 +161,21 @@ article {
   margin: 0 auto 3em;
   width: 100%;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 
   h1 {
     font-size: 4em;
     line-height: 0.9em;
-    margin: 0 0 0.2em 0;
+    margin: 0 0 0.2em;
 
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: $white;
     }
   }
 
   p {
-    font-style:italic;
+    font-style: italic;
     font-size: 1.6em;
     margin: 0;
   }

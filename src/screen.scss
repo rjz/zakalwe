@@ -1,4 +1,4 @@
-@import 'variables';
+@import './variables.scss';
 
 html {
   color: $black;
@@ -21,7 +21,6 @@ body {
   background-color: $white;
   margin: 0;
   padding-top: 0;
-
   overflow-x: hidden;
 }
 
@@ -32,18 +31,25 @@ footer {
 }
 
 a {
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $link-color;
     text-decoration: none;
   }
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     color: $link-color;
     text-decoration: underline;
   }
 }
 
-p, ol, ul, dl, blockquote {
+p,
+ol,
+ul,
+dl,
+blockquote {
   margin: 1.2em 0 1.6em;
 
   @media screen and (max-width: 768px) {
@@ -54,22 +60,23 @@ p, ol, ul, dl, blockquote {
 figure {
   display: block;
   margin: 3em auto 2em;
-  max-width:80%;
+  max-width: 80%;
 
   img {
-    display:block;
+    display: block;
     margin: auto;
   }
 
-  img, table {
-    max-width:100%;
+  img,
+  table {
+    max-width: 100%;
   }
 
   figcaption {
     text-align: center;
-    font-style:italic;
+    font-style: italic;
     font-size: 0.9em;
-    padding-top:0.6em;
+    padding-top: 0.6em;
     position: relative;
   }
 
@@ -88,18 +95,22 @@ figure {
   }
 }
 
-ol, ul, blockquote, pre {
+ol,
+ul,
+blockquote,
+pre {
   margin: 1.5em 2em;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 1.5em 1em;
 
   li {
-
     margin-bottom: 0.4em;
 
-    ol, ul {
+    ol,
+    ul {
       margin: 0.5em 1em 0.8em 0;
     }
 
@@ -115,12 +126,14 @@ ol, ul {
 
 dl {
   dt {
-    font: bold 1.0em $alt-font-family;
+    font: bold 1em $alt-font-family;
     margin-top: 0.5em;
+
     &:first-child {
       margin-top: 0;
     }
   }
+
   dd {
     font-style: italic;
     font-size: 0.9em;
@@ -132,10 +145,11 @@ ol {
 }
 
 ul {
-  margin-left: 0em;
+  margin-left: 0;
 }
 
-blockquote, pre {
+blockquote,
+pre {
   border-left: 1px dotted $black;
   font-size: 0.9em;
   padding: 0.5em 0 0.5em 1.5em;
@@ -156,17 +170,24 @@ hr {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $alt-font-family;
   font-weight: bold;
   line-height: 1.3;
   margin: 1.4em 0 0.4em;
 
-  a:link, a:visited {
+  a:link,
+  a:visited {
     color: $black;
   }
 
-  a:focus, a:hover {
+  a:focus,
+  a:hover {
     text-decoration: underline;
   }
 }
@@ -175,7 +196,7 @@ h1 {
   font-family: $font-family;
   font-weight: normal;
   margin: 2em 0 1em;
-  text-align:center;
+  text-align: center;
 
   small {
     font-family: $alt-font-family;
@@ -183,11 +204,12 @@ h1 {
   }
 
   @media screen and (max-width: 480px) {
-    margin: 0.5em 0 0.5em;
+    margin: 0.5em 0;
   }
 }
 
-code {
+code,
+pre {
   color: #048b51;
   font: normal 0.85em/1.4em $mono-font-family;
 
@@ -197,8 +219,6 @@ code {
 }
 
 pre {
-  @extend code;
-
   font-size: 0.9em;
   line-height: 1.3em;
   padding: 0.5em 1em 0.5em 2em;
@@ -217,7 +237,8 @@ table {
   margin: 1em 0 2em;
   width: 100%;
 
-  td, th {
+  td,
+  th {
     padding: 0.3em 1em;
     vertical-align: top;
   }
@@ -250,13 +271,19 @@ table {
   color: $white;
 
   a {
-    &:link, &:visited, &:hover, &:focus, &:active {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
       color: #fff;
       text-decoration: none;
       border-bottom: 1px dotted #fff;
     }
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       border-bottom: 1px solid #fff;
     }
   }

@@ -1,0 +1,5 @@
+language: javascript
+install:
+  - npm install stylelint
+script:
+  - npm run lint

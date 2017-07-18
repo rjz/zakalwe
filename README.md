@@ -1,6 +1,7 @@
 # Zakalwe
 
-A stylesheet for blogs and things. Responsive, high-contrast, and not much else.
+A stylesheet worth writing to. High-contrast, responsive, easy-reading, and
+little else.
 
 [Demo](https://rjz.github.io/zakalwe/)
 
@@ -8,7 +9,12 @@ A stylesheet for blogs and things. Responsive, high-contrast, and not much else.
 
 ## Build
 
-    $ make
+    $ npm install
+    $ npm run build
+
+## Test
+
+    $ npm run lint
 
 ## In The Wild
 

@@ -5,7 +5,20 @@
   "author": "RJ Zaworski <rj@rjzaworski.com>",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^3.9.3",
-    "normalize.css": "^4.2.0"
+    "cssmin": "^0.4.3",
+    "http-server": "^0.10.0",
+    "normalize.css": "^4.2.0",
+    "postcss": "^6.0.7",
+    "postcss-cli": "^4.1.0",
+    "postcss-import": "^10.0.0",
+    "postcss-scss": "^1.0.2",
+    "precss": "^2.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "scripts": {
+    "build": "postcss -o zakalwe.css src/zakalwe.scss --dir src/ && cssmin zakalwe.css > zakalwe.min.css",
+    "lint": "stylelint src/*.scss",
+    "start": "http-server -p 1345"
   }
 }
