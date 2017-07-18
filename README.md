@@ -1,5 +1,8 @@
 # Zakalwe
 
+[![Build
+Status](https://travis-ci.org/rjz/zakalwe.svg?branch=master)](https://travis-ci.org/rjz/zakalwe)
+
 A stylesheet worth writing to. High-contrast, responsive, easy-reading, and
 little else.
 
