@@ -3,6 +3,8 @@
 $container-width: 1200px;
 $article-width: 940px;
 $gutter: 90px;
+$anti-gutter: -90px;
+$inline-figure-width: 420px;
 
 article {
   margin: 0 auto;
@@ -60,7 +62,7 @@ article {
   font-size: 1.4em;
   width: 100vw;
   position: relative;
-  margin-left: -1 * $gutter;
+  margin-left: $anti-gutter;
   max-width: $container-width;
 
   @media screen and (max-width: $container-width) {
@@ -76,8 +78,12 @@ article {
 }
 
 .article__figure--inline {
-  width: ($container-width / 2) - 3 * $gutter;
-  max-width: 100%;
+  width: $inline-figure-width;
+
+  img,
+  table {
+    width: 100%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -101,7 +107,7 @@ article {
 .article__figure--jumbo {
   width: 100vw;
   position: relative;
-  margin-left: -1 * $gutter;
+  margin-left: $anti-gutter;
   max-width: $container-width;
 
   @media screen and (max-width: $container-width) {

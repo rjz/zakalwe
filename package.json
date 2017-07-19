@@ -17,8 +17,9 @@
     "stylelint-config-standard": "^17.0.0"
   },
   "scripts": {
-    "build": "postcss -o zakalwe.css src/zakalwe.scss --dir src/ && cssmin zakalwe.css > zakalwe.min.css",
+    "build": "postcss -o zakalwe.css src/zakalwe.scss && cssmin zakalwe.css > zakalwe.min.css",
     "lint": "stylelint --config=stylelint-config-standard **/*.scss",
-    "start": "http-server -p 1345"
+    "watch": "postcss -wo zakalwe.css src/zakalwe.scss",
+    "start": "http-server -c-1 -p 3246"
   }
 }

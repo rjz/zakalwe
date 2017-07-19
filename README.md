@@ -3,14 +3,21 @@
 [![Build
 Status](https://travis-ci.org/rjz/zakalwe.svg?branch=master)](https://travis-ci.org/rjz/zakalwe)
 
-A stylesheet worth writing to. High-contrast, responsive, easy-reading, and
-little else.
+A stylesheet worth writing to: responsive, easy on the eyes, and little else.
 
 [Demo](https://rjz.github.io/zakalwe/)
 
-![](screenshot.png)
+![](img/screenshot.png)
 
-## Build
+## Usage
+
+Zakalwe builds are available via unpkg:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/zakalwe/zakalwe.min.css" />
+```
+
+## Development
 
     $ npm install
     $ npm run build
