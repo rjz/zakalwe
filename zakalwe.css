@@ -473,7 +473,7 @@ figure cite {
 @media screen and (max-width: 768px) {
 
   figure {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -711,7 +711,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   font-size: 1.4em;
   width: 100vw;
   position: relative;
-  margin-left: -1 * 90px;
+  margin-left: -90px;
   max-width: 1200px;
 }
 
@@ -728,9 +728,12 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   }
 
 .article__figure--inline {
-  width: (1200px / 2) - 3 * 90px;
-  max-width: 100%;
+  width: 420px;
 }
+
+.article__figure--inline img, .article__figure--inline table {
+    width: 100%;
+  }
 
 @media screen and (max-width: 767px) {
 
@@ -756,7 +759,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 .article__figure--jumbo {
   width: 100vw;
   position: relative;
-  margin-left: -1 * 90px;
+  margin-left: -90px;
   max-width: 1200px;
 }
 
