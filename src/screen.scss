@@ -9,9 +9,7 @@ html {
   -ms-text-size-adjust: 100%;
 
   @media screen and (max-width: 769px) {
-    font: normal 1rem $font-family;
-    font: 16px;
-    line-height: 1.5;
+    font: normal 1rem/1.6 $font-family;
   }
 
   overflow-x: hidden;
@@ -151,8 +149,16 @@ ul {
 blockquote,
 pre {
   border-left: 1px dotted $black;
-  font-size: 0.9em;
-  padding: 0.5em 0 0.5em 1.5em;
+  font-size: 0.8em;
+  padding: 0.4em 0 0.4em 1.5em;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0.3em;
 }
 
 blockquote cite {
