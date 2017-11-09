@@ -4,5 +4,7 @@ $mono-font-family: monospace;
 
 $white: #fff;
 $black: #231f20;
+$blue: #1982d1;
 
-$link-color: #1982d1;
+$link-color: $black;
+$active-link-color: $blue;
