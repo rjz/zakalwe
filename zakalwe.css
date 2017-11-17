@@ -597,7 +597,8 @@ a > code, a > pre {
 pre {
   font-size: 0.9em;
   line-height: 1.3em;
-  padding: 0.5em 1em 0.5em 2em;
+  margin-left: 1em;
+  padding: 0.5em 1em;
   white-space: pre-wrap;
 }
 
