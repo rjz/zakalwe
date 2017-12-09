@@ -149,14 +149,12 @@ ul {
 
 blockquote,
 pre {
-  border-left: 1px dotted $black;
   font-size: 0.8em;
   padding: 0.4em 0 0.4em 1.5em;
 
   @media screen and (max-width: 480px) {
     & {
       font-size: 1em;
-      border-left: 0;
       padding-left: 0;
       margin: 1.5em 1em;
     }
