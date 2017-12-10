@@ -543,6 +543,7 @@ blockquote {
 @media screen and (max-width: 480px) {
 
   blockquote {
+    font-style: italic;
     max-width: inherit;
   }
 }
