@@ -60,13 +60,11 @@ article {
 
 .article__leader {
   font-size: 1.4em;
-  width: 100vw;
+  font-style: italic;
+  line-height: 1.5;
   position: relative;
-  margin-left: $anti-gutter;
-  max-width: $container-width;
 
   @media screen and (max-width: $container-width) {
-    margin-left: 0;
     max-width: 95%;
   }
 }
