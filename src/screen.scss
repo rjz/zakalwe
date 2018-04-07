@@ -59,7 +59,7 @@ blockquote {
 figure {
   display: block;
   margin: 3em auto 2em;
-  max-width: 80%;
+  max-width: 90%;
 
   img {
     display: block;
@@ -111,6 +111,7 @@ ul {
     ol,
     ul {
       margin: 0.5em 1em 0.8em 0;
+      padding-left: 1em;
     }
 
     ul {

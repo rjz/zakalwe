@@ -417,7 +417,7 @@ footer {
 a:link, a:visited {
   color: #231f20;
   text-decoration: none;
-  border-bottom: 1px solid #231f20;
+  border-bottom: 1px dotted #231f20;
 }
 
 a:hover, a:focus, a:active {
@@ -439,7 +439,7 @@ p, ol, ul, dl, blockquote {
 figure {
   display: block;
   margin: 3em auto 2em;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 figure img {
@@ -490,6 +490,7 @@ ol li, ul li {
 
 ol li ol, ol li ul, ul li ol, ul li ul {
       margin: 0.5em 1em 0.8em 0;
+      padding-left: 1em;
     }
 
 ol li ul, ul li ul {
@@ -646,6 +647,7 @@ pre {
 }
 
 table {
+  border-collapse: collapse;
   font-size: 0.9em;
   margin: 1em 0 2em;
   width: 100%;
@@ -665,12 +667,17 @@ table tr:last-child td {
   }
 
 table th {
-    border-bottom: 1px dotted #231f20;
+    border-bottom: 1px solid #231f20;
+    font-size: 0.9em;
     font-weight: normal;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     padding-top: 1em;
     text-align: left;
     text-transform: uppercase;
+  }
+
+table tbody > tr:first-child td {
+    padding-top: 0.5em;
   }
 
 @media screen and (max-width: 480px) {
@@ -729,6 +736,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 .article__sharing i, .article__sharing a:link, .article__sharing a:visited {
     cursor: pointer;
     color: #fff;
+    border: none;
   }
 
 .article__sharing i {
@@ -750,16 +758,22 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 
 .article__leader {
   font-size: 1.4em;
-  width: 100vw;
+  font-style: italic;
+  line-height: 1.5;
   position: relative;
-  margin-left: -90px;
-  max-width: 1200px;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .article__leader {
+    margin-left: calc(-90px/2);
+    margin-right: calc(-90px/2);
+  }
 }
 
 @media screen and (max-width: 1200px) {
 
   .article__leader {
-    margin-left: 0;
     max-width: 95%;
   }
 }

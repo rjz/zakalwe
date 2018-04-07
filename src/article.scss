@@ -65,6 +65,11 @@ article {
   line-height: 1.5;
   position: relative;
 
+  @media screen and (min-width: $container-width) {
+    margin-left: calc($anti-gutter/2);
+    margin-right: calc($anti-gutter/2);
+  }
+
   @media screen and (max-width: $container-width) {
     max-width: 95%;
   }
