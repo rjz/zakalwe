@@ -269,6 +269,7 @@ pre {
 }
 
 table {
+  border-collapse: collapse;
   font-size: 0.9em;
   margin: 1em 0 2em;
   width: 100%;
@@ -288,12 +289,17 @@ table {
   }
 
   th {
-    border-bottom: 1px dotted $black;
+    border-bottom: 1px solid $black;
+    font-size: 0.9em;
     font-weight: normal;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     padding-top: 1em;
     text-align: left;
     text-transform: uppercase;
+  }
+
+  tbody > tr:first-child td {
+    padding-top: 0.5em;
   }
 
   @media screen and (max-width: 480px) {
