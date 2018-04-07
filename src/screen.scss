@@ -33,7 +33,7 @@ a {
   &:visited {
     color: $link-color;
     text-decoration: none;
-    border-bottom: 1px solid $link-color;
+    border-bottom: 1px dotted $link-color;
   }
 
   &:hover,
