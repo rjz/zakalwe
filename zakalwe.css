@@ -576,7 +576,8 @@ blockquote p, blockquote ul, blockquote ol {
 
 hr {
   border: 0;
-  border-bottom: 1px dotted #231f20;
+  border-bottom: 1px solid #231f20;
+  clear: both;
   margin: 2em auto;
   max-width: 20%;
 }
@@ -766,8 +767,8 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 @media screen and (min-width: 1200px) {
 
   .article__leader {
-    margin-left: calc(-90px/2);
-    margin-right: calc(-90px/2);
+    margin-left: -60px;
+    margin-right: -60px;
   }
 }
 
@@ -814,14 +815,39 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 .article__figure--jumbo {
   width: 100vw;
   position: relative;
-  margin-left: -90px;
-  max-width: 1200px;
+  margin-left: -120px;
+  max-width: 1180px;
 }
 
 @media screen and (max-width: 1200px) {
 
   .article__figure--jumbo {
     margin-left: -5%;
+    margin-right: -5%;
+    max-width: 100vh;
+  }
+}
+
+.article__blockquote--jumbo {
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin: 2em 0;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  margin-left: -120px;
+  margin-right: -120px;
+  max-width: 1180px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .article__blockquote--jumbo {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -883,7 +909,11 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   margin: 0 auto 3em;
   width: 100%;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75),
+    0px 0px 30px black,
+    0px 0px 50px black,
+    0px 0px 50px black,
+    0px 0px 50px black;
 }
 
 .article-header__summary h1 {

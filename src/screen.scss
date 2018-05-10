@@ -197,7 +197,8 @@ blockquote ol {
 
 hr {
   border: 0;
-  border-bottom: 1px dotted $black;
+  border-bottom: 1px solid $black;
+  clear: both;
   margin: 2em auto;
   max-width: 20%;
 

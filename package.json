@@ -21,5 +21,8 @@
     "lint": "stylelint --config=stylelint-config-standard **/*.scss",
     "watch": "postcss -wo zakalwe.css src/zakalwe.scss",
     "start": "http-server -c-1 -p 3246"
+  },
+  "dependencies": {
+    "postcss-calc": "^6.0.1"
   }
 }

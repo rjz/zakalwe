@@ -3,7 +3,7 @@
 $container-width: 1200px;
 $article-width: 940px;
 $gutter: 90px;
-$anti-gutter: -90px;
+$anti-gutter: -120px;
 $inline-figure-width: 420px;
 
 article {
@@ -112,10 +112,32 @@ article {
   width: 100vw;
   position: relative;
   margin-left: $anti-gutter;
-  max-width: $container-width;
+  max-width: calc($article-width - $anti-gutter - $anti-gutter);
 
   @media screen and (max-width: $container-width) {
     margin-left: -5%;
+    margin-right: -5%;
+    max-width: 100vh;
+  }
+}
+
+.article__blockquote--jumbo {
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  margin: 2em 0;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  margin-left: $anti-gutter;
+  margin-right: $anti-gutter;
+  max-width: calc($article-width - $anti-gutter - $anti-gutter);
+  text-align: center;
+
+  @media screen and (max-width: $container-width) {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
