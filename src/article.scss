@@ -171,7 +171,11 @@ article {
   margin: 0 auto 3em;
   width: 100%;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75),
+    0px 0px 30px black,
+    0px 0px 50px black,
+    0px 0px 50px black,
+    0px 0px 50px black;
 
   h1 {
     font-size: 4em;
