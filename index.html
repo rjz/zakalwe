@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="apple-touch-icon-precomposed" href="icon-152.png">
-    <link rel="icon" href="icon.png" sizes="32x32">
-
     <title data-name="title">Zakalwe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +14,7 @@
   <body>
     <article>
       <header class="article-header">
-        <div class="article-header__image" style="background-image:url(http://placekitten.com/g/1000/700)"></div>
+        <div class="article-header__image" style="background-image:url(https://placeimg.com/1000/700/nature/grayscale)"></div>
         <div class="article-header__summary">
           <h1>Zakalwe</h1>
           <p>A high-contrast stylesheet for the written word.</p>
@@ -33,23 +30,20 @@
       </div>
 
       <p class="article__leader">
-        The world is full of mighty CSS frameworks, pumped up on features and
-        opinions. Grid systems, input toolkits, pattern libraries, plugins,
-        bells, and whistles&mdash;if there's a battery, it's included. This
-        stylesheet isn't like that.
+        The world is full of feature-rich CSS frameworks, but here's a dirty
+        little secret: sometimes, all that matters is the content.
       </p>
 
-      <p>The first thing you notice is how little there is. <a
-         href="https://github.com/rjz/zakalwe">Zakalwe</a> is a stylesheet.
-       It's <em>only</em> a stylesheet. If you're on the hunt for a rich
-       application with a steaming pile of pre-built components, it's probably
-       not the stylesheet for you.</p>
+      <p>No bells, whistles, or fancy components: your first impression is how
+        little there is. Zakalwe is a stylesheet. It's <em>only</em> a
+        stylesheet. If you're looking for grid systems, opinionated components,
+        or JavaScript, it's probably not right for you.
+      </p>
 
-      <p>But it <em>does</em> have clean base typography, sane defaults for
-      core HTML elements, and a few lovely options for responsive
-      <code>&lt;figure&gt;</code> elements inside the text corpus.</p>
-
-      <p>Sound good? Read on.</p>
+      <p>But it <em>does</em> include clean base typography, responsive
+        defaults, and a few lovely <code>&lt;figure&gt;</code> elements to
+        spice up the text corpus.
+      </p>
 
       <h2>Features</h2>
 
@@ -73,6 +67,7 @@
       </ol>
 
       <h2><a name="typography"></a>Typography</h2>
+      <p>Let's get it out of the way.</p>
       <p>
       <a href="http://www.lipsum.com/feed/html">Lorem ipsum</a> dolor sit
       amet, consectetur adipiscing elit. Fusce ac felis augue.  Integer
@@ -82,7 +77,8 @@
       rutrum eu purus eget, tincidunt dignissim augue. Praesent consectetur
       tincidunt suscipit. In hac habitasse platea dictumst.
       </p>
-      <p><em>It would hardly be a stylesheet without it..</em></p>
+
+      <p>I feel better. It would hardly be a stylesheet without it.</p>
 
       <h3><a name="headers"></a>Headers</h3>
 
@@ -94,7 +90,6 @@
       <h6>h6. Really?</h6>
 
       <h3><a name="pre"></a>Preformatted text</h3>
-      <p>In source code as in comedy, spacing matters.</p>
       <pre>
 _____________
 < Lorem ipsum >
@@ -104,14 +99,11 @@ _____________
         (__)\       )\/\
             ||----w |
             ||     ||
-
-      code is difficult to read on a non widescreen monitor as there are no horizontal scrollbars and ends of the long lines are hidden.
       </pre>
 
 
       <h2><a name="lists"></a>Lists</h2>
-      <p>Here's an unordered list. It's a veritable kitchen sink filled up to
-      the brim with grubby water and all the features you won't find here.</p>
+      <p>Here's an unordered list of things you won't find here.</p>
 
       <ul>
         <li>Grid systems</li>
@@ -121,9 +113,8 @@ _____________
         <li>JavaScript-powered components</li>
       </ul>
 
-      <p>Even if we prioritize all of those features, though, they still won't
-      be a part of this stylesheet. We'll give them an order for fun, but we
-      won't be adding them to the code.</p>
+      <p>Of course, some lists make more sense when they're ordered. We can do
+        that, too.</p>
 
       <ol>
         <li>Grid systems</li>
@@ -134,43 +125,56 @@ _____________
       </ol>
 
       <h2><a name="blockquotes"></a>Blockquotes</h2>
-      <p>Quotes can bolster an incredible story with color and expert
-      testimony. There's just one little catch, and America's 16th President
-      knows it better than anyone:</p>
       <blockquote>
-        <p>&ldquo;The problem with internet quotes is that you can&rsquo;t
-        always depend on their accuracy&rdquo;</p>
+        <p>&ldquo;Finally, a stylesheet that lynx can be proud of.&rdquo;</p>
         <cite>&mdash; Abraham Lincoln, 1864</cite>
       </blockquote>
-      <p>"Honest Abe" didn't earn his name for nothing. Whether a quote's
-      authentic or not, however, we can at least make it look good.</p>
+
+      <p>That's Honest Abe for ya: short, pointed, and trustworthy to a fault.
+        But how about quotes with a bit more&hellip; substance?</p>
+      <blockquote>
+        <p>Living your life is a task so difficult, it has never been attempted
+        before.</p>
+        <p>The true Southern watermelon is a boon apart, and not to be
+        mentioned with commoner things.  It is chief of the world's luxuries,
+        king by the grace of God over all the fruits of the earth.  When one
+        has tasted it, he knows what the angels eat.</p>
+        <p>It was not a Southern
+        watermelon that Eve took; we know it because she repented.</p>
+        <cite>&mdash; Mark Twain, "Pudd'nhead Wilson's Calendar"</cite>
+      </blockquote>
+
+      <p>We can break the same quote out for emphasis using
+        <code>.article__blockquote--jumbo</code></p>
+
+      <blockquote class="article__blockquote--jumbo">
+        <p>&ldquo;The true Southern watermelon is a boon apart, and not to be
+          mentioned with commoner things.  It is chief of the world's luxuries,
+          king by the grace of God over all the fruits of the earth.  When one
+          has tasted it, he knows what the angels eat.&rdquo;</p>
+      </blockquote>
+
+      <p>Thanks, Mark. Let's continue our tour with figures.</p>
 
       <h2><a name="figures"></a>Figures</h2>
 
       <p>We're big on figures.</p>
 
       <figure class="article__figure--jumbo">
-        <img src="http://placekitten.com/g/1200/300" />
-        <figcaption>
-          Figures may be <code>.article__figure--jumbo</code>
-          <cite>(placekitten.com)</cite>
-        </figcaption>
+        <img src="https://placeimg.com/1200/500/arch/grayscale" />
+        <figcaption>Figures may be <code>.article__figure--jumbo</code></figcaption>
       </figure>
-
-      <h2>Inline Figures</h2>
 
       <figure class="article__figure--inline article__figure--inline-right">
-        <img src="http://placekitten.com/g/301/100" />
-        <figcaption>
-          <code>.article__figure--inline-right</code>
-          <cite>(placekitten.com)</cite>
-        </figcaption>
+        <img src="https://placeimg.com/300/100/nature/grayscale" />
+        <figcaption><code>.article__figure--inline-right</code></figcaption>
       </figure>
 
-      <p>Figures don't need to be jumbo, page-wide things. We can also float
-      them to let related text flow alongside, as with the figure aligned to
-      the right. Floated images are a wonderful tool to keep on hand for those
-      circumstances where a thumbnail can get the point across.</p>
+      <p>Figures don't need to be jumbo, page-wide things. We can also
+      float them to let related text flow alongside, as with the figure
+      aligned to the right.</p>
+
+      <hr />
 
       <p>If you're on a mobile handset with a too-small screen, you'll see
       these images center up within the single column of text. They won't
@@ -178,26 +182,18 @@ _____________
       surrounding text, either.</p>
 
       <figure class="article__figure--inline article__figure--inline-left">
-        <img src="http://placekitten.com/g/301/100" />
-        <figcaption>
-          <code>.article__figure--inline-left</code>
-          <cite>(placekitten.com)</cite>
-        </figcaption>
+        <img src="https://placeimg.com/300/100/arch/grayscale" />
+        <figcaption><code>.article__figure--inline-left</code></figcaption>
       </figure>
 
       <p>But we'd be remiss to overlook the sinister side! So the same
       trick of course works for left-floated figures. We've got three great
       options for adding some imagery alongside the article text.</p>
 
-      <p>That's it for images, but there are several other figures we might
-      want to enlist in supporting our story. Given loads of data, for
-      instance, it might be nice to align it in a table.</p>
-
       <h2><a name="tables"></a>Tables</h2>
-
-      <p>Tables: they're not just for layout. And since tabular data deserves
-      the same, first-class typographic treatment as the text it's supporting,
-      we've given it nothing less. Let's see it in action.</p>
+      <p>When the data can speak for itself, let it! Leave the stylesheet to
+        worry about making it look good.
+      </p>
 
       <figure>
         <figcaption>Capital Cities of the Western Hemisphere (inexhaustive)</figcaption>
@@ -224,19 +220,16 @@ _____________
           </tbody>
         </table>
       </figure>
-      </p>Beauty, eh? And the <code>&lt;figure&gt;</code> wrapping it can carry
-      over to charts, graphs, or any other interstitial.</p>
 
       <h2><a name="about"></a>About</h2>
 
       <p>Zakalwe is distilled from the styling of <a
-             href="https://rjzaworski.com">rjzaworski.com</a>. It's <a
-             href="https://opensource.org/licenses/ISC">ISC-licensed</a>: use,
-           modification, and contributions are very welcome!</p>
+         href="https://rjzaworski.com">rjzaworski.com</a>. It&rsquo;s <a
+         href="https://opensource.org/licenses/ISC">ISC-licensed</a>: use,
+       modification, and contributions are very welcome!</p>
 
       <h3><a name="the-name"></a>&ldquo;Zakalwe?&rdquo;</h3>
       <p><a href="https://www.amazon.com/Use-Weapons-Culture-Iain-Banks/dp/0316030570">Yes</a>.</p>
-
 
     </article>
 
@@ -244,6 +237,8 @@ _____________
       <section class="copyright">
         Another unrepentant production from
         <a href="https://rjzaworski.com">rj zaworski</a>
+        &middot;
+        <a href="https://rjz.github.io/zakalwe">Github</a>
         <!-- :^) -->
       </section>
     </footer>
@@ -260,4 +255,3 @@ _____________
     </script>
   </body>
 </html>
-
