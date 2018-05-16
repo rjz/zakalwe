@@ -100,12 +100,20 @@ article {
 
 .article__figure--inline-right {
   float: right;
-  margin: 0 0 1em 1em;
+  margin: 0 calc($anti-gutter / 2)  1em 1em;
+
+  @media screen and (max-width: $container-width) {
+    margin-right: 0;
+  }
 }
 
 .article__figure--inline-left {
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 1em calc($anti-gutter / 2);
+
+  @media screen and (max-width: $container-width) {
+    margin-left: 0;
+  }
 }
 
 .article__figure--jumbo {
