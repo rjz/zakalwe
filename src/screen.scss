@@ -96,7 +96,6 @@ figure {
 
 ol,
 ul,
-blockquote,
 pre {
   margin: 1.5em 2em;
 }
@@ -148,7 +147,6 @@ ul {
   margin-left: 0;
 }
 
-blockquote,
 pre {
   font-size: 0.8em;
   padding: 0.4em 0 0.4em 1.5em;
@@ -163,11 +161,15 @@ pre {
 }
 
 blockquote {
-  max-width: 90%;
+  font-style: italic;
+  border-left: 1px dotted $black;
+  margin-left: -1em;
+  padding: 0.2em 2em 0.4em;
 
-  @media screen and (max-width: 480px) {
-    font-style: italic;
-    max-width: inherit;
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    padding: 0.2em 1em 0.4em;
+    border: 0;
   }
 }
 
