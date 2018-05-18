@@ -31,6 +31,9 @@ article {
 }
 
 .article__sharing {
+  margin: 3em 0;
+  text-align: center;
+
   li {
     display: inline;
     list-style: none;
@@ -65,10 +68,10 @@ article {
   line-height: 1.5;
   position: relative;
 
-  @media screen and (min-width: $container-width) {
+  /*@media screen and (min-width: $container-width) {
     margin-left: calc($anti-gutter/2);
     margin-right: calc($anti-gutter/2);
-  }
+  } */
 
   @media screen and (max-width: $container-width) {
     max-width: 95%;
@@ -198,30 +201,27 @@ article {
 }
 
 .article-header__summary {
-  max-width: 768px;
-  margin: 0 auto 3em;
+  background-color: #fff;
+  box-shadow: 0 0 30px $black;
+  color: $black;
+  max-width: $container-width;
+  margin: 0 auto;
   width: 100%;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75),
-    0px 0px 30px black,
-    0px 0px 50px black,
-    0px 0px 50px black,
-    0px 0px 50px black;
 
   h1 {
     font-size: 4em;
     line-height: 0.9em;
-    margin: 0 0 0.2em;
+    margin: 1em 0 0.2em;
 
     a:link,
     a:visited {
-      color: $white;
+      color: $black;
     }
   }
 
   p {
     font-style: italic;
-    font-size: 1.6em;
     margin: 0;
   }
 
