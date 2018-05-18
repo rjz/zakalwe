@@ -733,6 +733,11 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   }
 }
 
+.article__sharing {
+  margin: 3em 0;
+  text-align: center;
+}
+
 .article__sharing li {
     display: inline;
     list-style: none;
@@ -766,14 +771,11 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   font-style: italic;
   line-height: 1.5;
   position: relative;
-}
 
-@media screen and (min-width: 1200px) {
-
-  .article__leader {
-    margin-left: -60px;
-    margin-right: -60px;
-  }
+  /*@media screen and (min-width: $container-width) {
+    margin-left: calc($anti-gutter/2);
+    margin-right: calc($anti-gutter/2);
+  } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -924,30 +926,27 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   }
 
 .article-header__summary {
-  max-width: 768px;
-  margin: 0 auto 3em;
+  background-color: #fff;
+  box-shadow: 0 0 30px #231f20;
+  color: #231f20;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   z-index: 1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75),
-    0px 0px 30px black,
-    0px 0px 50px black,
-    0px 0px 50px black,
-    0px 0px 50px black;
 }
 
 .article-header__summary h1 {
     font-size: 4em;
     line-height: 0.9em;
-    margin: 0 0 0.2em;
+    margin: 1em 0 0.2em;
   }
 
 .article-header__summary h1 a:link, .article-header__summary h1 a:visited {
-      color: #fff;
+      color: #231f20;
     }
 
 .article-header__summary p {
     font-style: italic;
-    font-size: 1.6em;
     margin: 0;
   }
 
