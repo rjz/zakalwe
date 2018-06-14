@@ -383,7 +383,7 @@ textarea {
 
 html {
   color: #231f20;
-  font: normal 1.3rem/1.6 Georgia,serif;
+  font: normal 1.3rem/1.6 'Source Serif Pro',Georgia,serif;
 
   /* ref: http://stackoverflow.com/questions/11006812*/
   -webkit-text-size-adjust: 100%;
@@ -393,7 +393,7 @@ html {
 @media screen and (max-width: 769px) {
 
   html {
-    font: normal 1rem/1.6 Georgia,serif;
+    font: normal 1rem/1.6 'Source Serif Pro',Georgia,serif;
   }
 }
 
@@ -409,7 +409,7 @@ body {
 }
 
 footer {
-  font: 0.7em Arial,sans-serif;
+  font: 0.7em 'Lato',Arial,sans-serif;
   padding: 2em 0 1.6em;
   text-align: center;
 }
@@ -425,13 +425,17 @@ a:hover, a:focus, a:active {
   border-bottom-color: #1982d1;
 }
 
-p, ol, ul, dl, blockquote {
+p {
+  margin: 0.2em 0 1em;
+}
+
+ol, ul, dl, blockquote {
   margin: 1.2em 0 1.6em;
 }
 
 @media screen and (max-width: 768px) {
 
-  p, ol, ul, dl, blockquote {
+  ol, ul, dl, blockquote {
     margin: 1em 0;
   }
 }
@@ -502,7 +506,7 @@ ol li ol, ul li ol {
     }
 
 dl dt {
-    font: bold 1em Arial,sans-serif;
+    font: bold 1em 'Lato',Arial,sans-serif;
     margin-top: 0.5em
   }
 
@@ -591,10 +595,8 @@ hr {
   }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial,sans-serif;
-  font-weight: bold;
   line-height: 1.3;
-  margin: 1.4em 0 0.4em;
+  margin: 2em 0 0.8em;
 }
 
 h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
@@ -606,14 +608,13 @@ h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:foc
   }
 
 h1 {
-  font-family: Georgia,serif;
+  font-family: 'Source Serif Pro',Georgia,serif;
   font-weight: normal;
-  margin: 2em 0 1em;
   text-align: center;
 }
 
 h1 small {
-    font-family: Arial,sans-serif;
+    font-family: 'Lato',Arial,sans-serif;
     font-size: 0.4em;
   }
 
@@ -622,6 +623,16 @@ h1 small {
   h1 {
     margin: 0.5em 0;
   }
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font: 600 0.9em/1 'Lato',Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 code, pre {
@@ -771,11 +782,6 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
   font-style: italic;
   line-height: 1.5;
   position: relative;
-
-  /*@media screen and (min-width: $container-width) {
-    margin-left: calc($anti-gutter/2);
-    margin-right: calc($anti-gutter/2);
-  } */
 }
 
 @media screen and (max-width: 1200px) {
