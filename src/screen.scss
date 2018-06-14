@@ -44,7 +44,10 @@ a {
   }
 }
 
-p,
+p {
+  margin: 0.2em 0 1em;
+}
+
 ol,
 ul,
 dl,
@@ -215,10 +218,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $alt-font-family;
-  font-weight: bold;
   line-height: 1.3;
-  margin: 1.4em 0 0.4em;
+  margin: 2em 0 0.8em;
 
   a:link,
   a:visited {
@@ -234,7 +235,6 @@ h6 {
 h1 {
   font-family: $font-family;
   font-weight: normal;
-  margin: 2em 0 1em;
   text-align: center;
 
   small {
@@ -245,6 +245,16 @@ h1 {
   @media screen and (max-width: 480px) {
     margin: 0.5em 0;
   }
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font: 600 0.9em/1 $alt-font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 code,
