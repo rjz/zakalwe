@@ -105,7 +105,7 @@ pre {
 
 ol,
 ul {
-  margin: 1.5em 1em;
+  margin: 1.5em 1em 1.5em 0;
 
   li {
     margin-bottom: 0.4em;
@@ -144,10 +144,6 @@ dl {
 
 ol {
   list-style: decimal-leading-zero;
-}
-
-ul {
-  margin-left: 0;
 }
 
 pre {

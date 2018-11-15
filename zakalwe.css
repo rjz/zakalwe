@@ -485,7 +485,7 @@ ol, ul, pre {
 }
 
 ol, ul {
-  margin: 1.5em 1em;
+  margin: 1.5em 1em 1.5em 0;
 }
 
 ol li, ul li {
@@ -521,10 +521,6 @@ dl dd {
 
 ol {
   list-style: decimal-leading-zero;
-}
-
-ul {
-  margin-left: 0;
 }
 
 pre {
