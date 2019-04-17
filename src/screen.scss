@@ -4,7 +4,7 @@ html {
   color: $black;
   font: normal 1.3rem/1.6 $font-family;
 
-  // ref: http://stackoverflow.com/questions/11006812
+  /* ref: http://stackoverflow.com/questions/11006812 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
@@ -67,10 +67,6 @@ figure {
   img {
     display: block;
     margin: auto;
-  }
-
-  img,
-  table {
     max-width: 100%;
   }
 
@@ -97,15 +93,59 @@ figure {
   }
 }
 
+blockquote {
+  font-style: italic;
+  border-left: 1px dotted $black;
+  margin-left: -1em;
+  padding: 0.2em 2em 0.4em;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    padding: 0.2em 1em 0.4em;
+    border: 0;
+  }
+}
+
+blockquote cite {
+  margin-left: 3em;
+  margin-top: 0.4em;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 1em;
+  }
+}
+
+blockquote p {
+  line-height: 1.4;
+  margin: 1em 0;
+
+  &:first-child {
+    margin-top: 0.4em;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0.4em;
+  }
+}
+
 ol,
 ul,
 pre {
   margin: 1.5em 2em;
 }
 
+ol {
+  list-style: decimal-leading-zero;
+}
+
 ol,
 ul {
   margin: 1.5em 1em 1.5em 0;
+
+  blockquote & {
+    line-height: 1.4;
+    margin: 1em 0;
+  }
 
   li {
     margin-bottom: 0.4em;
@@ -140,60 +180,6 @@ dl {
     font-style: italic;
     font-size: 0.9em;
   }
-}
-
-ol {
-  list-style: decimal-leading-zero;
-}
-
-pre {
-  font-size: 0.8em;
-  padding: 0.4em 0 0.4em 1.5em;
-
-  @media screen and (max-width: 480px) {
-    & {
-      font-size: 1em;
-      padding-left: 0;
-      margin: 1.5em 1em;
-    }
-  }
-}
-
-blockquote {
-  font-style: italic;
-  border-left: 1px dotted $black;
-  margin-left: -1em;
-  padding: 0.2em 2em 0.4em;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 0;
-    padding: 0.2em 1em 0.4em;
-    border: 0;
-  }
-}
-
-blockquote p:first-child {
-  margin-top: 0.4em;
-}
-
-blockquote p:last-of-type {
-  margin-bottom: 0.4em;
-}
-
-blockquote cite {
-  margin-left: 3em;
-  margin-top: 0.4em;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 1em;
-  }
-}
-
-blockquote p,
-blockquote ul,
-blockquote ol {
-  line-height: 1.4;
-  margin: 1em 0;
 }
 
 hr {
@@ -257,10 +243,6 @@ code,
 pre {
   color: #048b51;
   font: normal 0.85em/1.4em $mono-font-family;
-
-  a > & {
-    color: $link-color;
-  }
 }
 
 pre {
@@ -271,11 +253,21 @@ pre {
   white-space: pre-wrap;
 
   @media screen and (max-width: 1025px) {
-    border: none;
     padding: 1em 0;
     overflow-wrap: break-word;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1em;
+    padding-left: 0;
+    margin: 1.5em 1em;
+  }
+}
+
+a > code,
+a > pre {
+  color: $link-color;
 }
 
 table {
@@ -318,26 +310,6 @@ table {
   }
 }
 
-.dark {
-  background-color: $black;
-  color: $white;
-
-  a {
-    &:link,
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 1px dotted #fff;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      border-bottom: 1px solid #fff;
-    }
-  }
+figure > table {
+  max-width: 100%;
 }
-
