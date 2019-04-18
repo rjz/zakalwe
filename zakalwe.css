@@ -459,6 +459,7 @@ blockquote {
   font-style: italic;
   border-left: 1px dotted #231f20;
   margin-left: -1em;
+  margin-right: 3em;
   padding: 0.2em 2em 0.4em
 }
 
@@ -466,6 +467,7 @@ blockquote {
 
 blockquote {
     margin-left: 0;
+    margin-right: 0;
     padding: 0.2em 1em 0.4em;
     border: 0
 }
@@ -484,7 +486,7 @@ blockquote cite {
   }
 
 blockquote p {
-  line-height: 1.4;
+  line-height: 1.3;
   margin: 1em 0
 }
 
@@ -733,13 +735,15 @@ article h1,
 @media screen and (max-width: 1024px) {
 
 article {
-    max-width: 90%
+    max-width: 600px;
+    width: 90%
 }
   }
 
 @media screen and (max-width: 768px) {
 
 article {
+    width: 500px;
     max-width: 95%
 }
   }
@@ -816,9 +820,9 @@ article {
 @media screen and (max-width: 1200px) {
 
 .article__figure--jumbo {
-    margin-left: -5%;
-    margin-right: -5%;
-    max-width: 100vw
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%
 }
   }
 
@@ -848,7 +852,7 @@ article {
 
 .article-header {
   background-color: #231f20;
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
   max-height: 800px;
   display: flex;
@@ -864,15 +868,10 @@ article {
 @media screen and (max-width: 1024px) {
 
 .article-header {
-    max-height: 50vh;
-    margin-left: -5.5%
-}
-  }
-
-@media screen and (max-width: 768px) {
-
-.article-header {
-    margin-left: -2.6%
+    height: auto;
+    max-height: auto;
+    margin: 0;
+    width: auto
 }
   }
 
