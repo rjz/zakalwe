@@ -273,7 +273,6 @@ a > pre {
 }
 
 table {
-  border-collapse: collapse;
   font-size: 0.9em;
   margin: 1em 0 2em;
   width: 100%;
@@ -288,12 +287,24 @@ table {
     border-bottom: 1px dotted $black;
   }
 
+  td hr {
+    margin: 0.3em auto 0.6em;
+    max-width: 100%;
+    border: 0;
+    height: auto;
+    text-align: center;
+
+    &::before {
+      content: '…';
+    }
+  }
+
   tr:last-child td {
     border-bottom: 0;
   }
 
   th {
-    border-bottom: 1px solid $black;
+    border-bottom: 2px solid $black;
     font-size: 0.9em;
     font-weight: normal;
     letter-spacing: 0.1em;

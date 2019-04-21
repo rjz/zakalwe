@@ -670,7 +670,6 @@ a > pre {
 }
 
 table {
-  border-collapse: collapse;
   font-size: 0.9em;
   margin: 1em 0 2em;
   width: 100%;
@@ -686,12 +685,24 @@ table td {
     border-bottom: 1px dotted #231f20;
   }
 
+table td hr {
+    margin: 0.3em auto 0.6em;
+    max-width: 100%;
+    border: 0;
+    height: auto;
+    text-align: center
+  }
+
+table td hr::before {
+      content: '…';
+    }
+
 table tr:last-child td {
     border-bottom: 0;
   }
 
 table th {
-    border-bottom: 1px solid #231f20;
+    border-bottom: 2px solid #231f20;
     font-size: 0.9em;
     font-weight: normal;
     letter-spacing: 0.1em;
