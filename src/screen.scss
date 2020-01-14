@@ -96,7 +96,7 @@ figure {
 blockquote {
   font-style: italic;
   border-left: 1px dotted $black;
-  margin-left: -1em;
+  margin-left: 2em;
   margin-right: 3em;
   padding: 0.2em 2em 0.4em;
 
@@ -118,8 +118,6 @@ blockquote cite {
 }
 
 blockquote p {
-  font-size: 0.9em;
-  line-height: 1.5;
   margin: 1em 0;
 
   &:first-child {
@@ -143,7 +141,7 @@ ol {
 
 ol,
 ul {
-  margin: 1.5em 1em 1.5em 0;
+  margin: 1.5em 1em 1.5em 1em;
 
   blockquote & {
     line-height: 1.4;
@@ -233,19 +231,16 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
 }
 
 h3 {
-  font: 600 0.9em/1 $alt-font-family;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 1.0em;
 }
 
 code,
 pre {
-  color: #048b51;
-  font: normal 0.85em/1.4em $mono-font-family;
+  color: $green;
+  font: normal 0.9em/1.4em $mono-font-family;
 }
 
 pre {
@@ -274,7 +269,6 @@ a > pre {
 }
 
 table {
-  font-size: 0.9em;
   margin: 1em 0 2em;
   width: 100%;
 
@@ -306,12 +300,9 @@ table {
 
   th {
     border-bottom: 2px solid $black;
-    font-size: 0.9em;
-    font-weight: normal;
-    letter-spacing: 0.1em;
+    font-weight: bold;
     padding-top: 1em;
     text-align: left;
-    text-transform: uppercase;
   }
 
   tbody > tr:first-child td {
