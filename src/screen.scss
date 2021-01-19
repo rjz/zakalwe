@@ -2,17 +2,15 @@
 
 html {
   color: $black;
-  font: normal 1.3rem/1.6 $font-family;
+  font: normal 1.4rem/1.8 $font-family;
 
   /* ref: http://stackoverflow.com/questions/11006812 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
   @media screen and (max-width: 769px) {
-    font: normal 1rem/1.6 $font-family;
+    font: normal 1.1rem/1.8 $font-family;
   }
-
-  overflow-x: hidden;
 }
 
 body {
@@ -239,8 +237,8 @@ h3 {
 
 code,
 pre {
-  color: $green;
-  font: normal 0.9em/1.4em $mono-font-family;
+  color: $black;
+  font: bold 0.8em/1.4em $mono-font-family;
 }
 
 pre {
@@ -271,6 +269,7 @@ a > pre {
 table {
   margin: 1em 0 2em;
   width: 100%;
+  border-spacing: 0;
 
   td,
   th {
