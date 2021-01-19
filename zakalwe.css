@@ -351,24 +351,19 @@ template {
 
 html {
   color: #231f20;
-  font: normal 1.3rem/1.6 'Source Serif Pro', Georgia, serif;
+  font: normal 1.4rem/1.8 'Source Serif Pro', Georgia, serif;
 
   /* ref: http://stackoverflow.com/questions/11006812 */
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
 }
 
 @media screen and (max-width: 769px) {
 
 html {
-    font: normal 1rem/1.6 'Source Serif Pro', Georgia, serif;
+    font: normal 1.1rem/1.8 'Source Serif Pro', Georgia, serif
 }
   }
-
-html {
-
-  overflow-x: hidden;
-}
 
 body {
   background-color: #fff;
@@ -630,8 +625,8 @@ h3 {
 
 code,
 pre {
-  color: #048b51;
-  font: normal 0.9em/1.4em monospace;
+  color: #231f20;
+  font: bold 0.8em/1.4em monospace;
 }
 
 pre {
@@ -668,6 +663,7 @@ a > pre {
 table {
   margin: 1em 0 2em;
   width: 100%;
+  border-spacing: 0;
 }
 
 table td,
@@ -905,6 +901,11 @@ article {
   margin: 3em 0;
   text-align: center;
 }
+
+.article__sharing ul {
+    margin: 0;
+    padding: 0;
+  }
 
 .article__sharing li {
     display: inline;
