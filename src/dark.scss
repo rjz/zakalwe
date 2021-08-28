@@ -21,4 +21,13 @@
       border-bottom: 1px solid #fff;
     }
   }
+
+  code,
+  pre {
+    color: $green-light;
+  }
+
+  td, th {
+    border-color: $white;
+  }
 }
