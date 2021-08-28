@@ -8,8 +8,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 
-  @media screen and (max-width: 769px) {
-    font: normal 1.1rem/1.8 $font-family;
+  @media screen and (max-width: 768px) {
+    font: normal 1rem/1.6 $font-family;
   }
 }
 
