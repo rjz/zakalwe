@@ -920,6 +920,11 @@ article {
     border: none;
   }
 
+.dark .article__sharing i, .dark .article__sharing a:link, .dark .article__sharing a:visited {
+      border: none;
+      color: #231f20;
+    }
+
 .article__sharing i {
     background: #231f20;
     display: inline-block;
@@ -929,6 +934,10 @@ article {
     height: 1em;
     text-align: center;
   }
+
+.dark .article__sharing i {
+      background: #fff;
+    }
 
 @media screen and (max-width: 768px) {
 
@@ -970,6 +979,11 @@ article {
     margin-bottom: 0;
     max-width: calc(100vw - 40px)
 }
+  }
+
+.dark .article-header__summary {
+    background-color: #231f20;
+    color: #fff;
   }
 
 .dark {
