@@ -184,6 +184,11 @@ article {
     cursor: pointer;
     color: $white;
     border: none;
+
+    .dark & {
+      border: none;
+      color: $black;
+    }
   }
 
   i {
@@ -194,6 +199,10 @@ article {
     width: 1em;
     height: 1em;
     text-align: center;
+
+    .dark & {
+      background: $white;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -202,7 +211,7 @@ article {
 }
 
 .article-header__summary {
-  background-color: #fff;
+  background-color: $white;
   box-shadow: 0 0 30px $black;
   color: $black;
   max-width: $container-width;
@@ -230,5 +239,10 @@ article {
     padding: 1em 20px;
     margin-bottom: 0;
     max-width: calc(100vw - 40px);
+  }
+
+  .dark & {
+    background-color: $black;
+    color: $white;
   }
 }
