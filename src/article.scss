@@ -63,6 +63,16 @@ article {
   }
 }
 
+.article__figure--inline img,
+.article__figure--jumbo img {
+  @media screen and (max-width: 767px) {
+    margin: auto -5%;
+    max-width: none;
+    max-height: none;
+    width: 110%;
+  }
+}
+
 .article__figure--inline cite {
   position: static;
 }
