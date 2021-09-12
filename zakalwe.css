@@ -408,7 +408,8 @@ ol,
 ul,
 dl,
 blockquote {
-    margin: 1em 0
+    margin: 1em 0;
+    padding: 0 1em
 }
   }
 
@@ -778,6 +779,17 @@ article {
 
 .article__figure--inline {
     width: 100%
+}
+  }
+
+@media screen and (max-width: 767px) {
+
+.article__figure--inline img,
+.article__figure--jumbo img {
+    margin: auto -5%;
+    max-width: none;
+    max-height: none;
+    width: 110%
 }
   }
 
