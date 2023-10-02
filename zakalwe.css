@@ -85,7 +85,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -408,7 +409,8 @@ ol,
 ul,
 dl,
 blockquote {
-    margin: 1em 0
+    margin: 1em 0;
+    padding: 0 1em
 }
   }
 
@@ -778,6 +780,17 @@ article {
 
 .article__figure--inline {
     width: 100%
+}
+  }
+
+@media screen and (max-width: 767px) {
+
+.article__figure--inline img,
+.article__figure--jumbo img {
+    margin: auto -5%;
+    max-width: none;
+    max-height: none;
+    width: 110%
 }
   }
 
